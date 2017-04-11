@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    
+    <head>
+        <title>Wikipedia Reader</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="main.css" type="text/css"> <!-- Added custom css -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"> <!-- Added bootstrap css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"> <!-- Added animate.css -->
+        
+        
+    </head>
+    
+    <body>
+      <div class="container">
+        <h1 class="text-center" style="margin-top: 20px; font-size: 56px;">Wikipedia Reader</h1>
+        <p class="text-center">Created by: <a href="http://codepen.io/m-ketan/" target="_blank">ketan</p>
+        <div class="section-1"> <!-- Div for image and text section -->
+          <h6><a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank"><img src="http://vignette2.wikia.nocookie.net/dancemoms/images/1/12/Wikipedia.png/revision/latest?cb=20160705133421" id="wikimg" style="height:80px; width:auto;"></a>&nbsp;&nbsp;Click 'W' to generate a random wiki article.</h6>
+       </div>
+        <h3 class="text-center">OR</h3>
+        <!-- Search and submit section -->
+        <h6>Search wiki for your desired topic:</h6>
+        <input class="form-control" id="searchTerm">
+       <div class="text-center"> 
+        <button id="search" class="btn btn-primary" type="submit" style="margin-top: 15px; padding: 10px 30px; margin-bottom: 30px;">Submit</button>
+       </div> 
+        <!-- list for appending wiki data upon submitting search -->
+        <ul id="searchResult">
+        </ul>
+      </div>
+    </body>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script> <!-- Added bootstrap js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!-- Added jquery -->
+    <script src="script.js"></script> <!-- Added custom js -->
+    
+
+</html>    
