@@ -1,0 +1,42 @@
+body {
+  background-color: green;
+  box-sizing: border-box;
+}
+
+.main-col {
+	background-color: #fff;
+	position: relative;
+	margin: 0 auto;
+	padding: 0 !important;
+	
+}
+
+#twitch-logo {
+	width: 100%;
+	height: auto;
+}
+
+
+.main-nav {
+	width: 100%;
+	background: #fff;
+    position: relative;    
+}
+
+.main-nav li {
+	list-style: none;
+	float: left;
+}
+
+.custom-btn {
+    border: 2px solid #000 !important;
+    width: 100%;
+}
+
+.custom-btn:hover {
+    background-color: darkblue !important;
+}
+
+.nav-btn {
+    width: 100%;
+}
