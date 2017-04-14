@@ -37,7 +37,7 @@ $(document).ready(function() {
         $('.channel-info').html('');
         for(var i in userOn){
             
-           $(".channel-info").prepend("<div class='row channel-row'><div class='col-md-2 channel'><img src="+userOn[i][1]+"></div><div class='col-md-8 channel-details-on'<h6><a href='"+userOn[i][0]+"'>"+userOn[i][2]+"</a></h6><p>"+userOn[i][2]+": "+userOn[i][3]+"</p></div><div class='col-md-2 channel-btn'><div class='status-btn-on'></div></div></div>");
+           $(".channel-info").prepend("<div class='row channel-row'><div class='col-md-2 channel'><img src="+userOn[i][1]+"></div><div class='col-md-8 channel-details-on'<h6><a href='"+userOn[i][0]+"' target='_blank'>"+userOn[i][2]+"</a></h6><p>"+userOn[i][2]+": "+userOn[i][3]+"</p></div><div class='col-md-2 channel-btn'><div class='status-btn-on'></div></div></div>");
             
            for(var i in userOff){
             
@@ -58,7 +58,7 @@ $(document).ready(function() {
         $('.channel-info').html('');
         for(var i in userOn){
             
-           $(".channel-info").prepend("<div class='row channel-row'><div class='col-md-2 channel'><img src="+userOn[i][1]+"></div><div class='col-md-8 channel-details-on'<h6><a href='"+userOn[i][0]+"'>"+userOn[i][2]+"</a></h6><p>"+userOn[i][2]+": "+userOn[i][3]+"</p></div><div class='col-md-2 channel-btn'><div class='status-btn-on'></div></div></div>");
+           $(".channel-info").prepend("<div class='row channel-row'><div class='col-md-2 channel'><img src="+userOn[i][1]+"></div><div class='col-md-8 channel-details-on'<h6><a href='"+userOn[i][0]+"' target='_blank'>"+userOn[i][2]+"</a></h6><p>"+userOn[i][2]+": "+userOn[i][3]+"</p></div><div class='col-md-2 channel-btn'><div class='status-btn-on'></div></div></div>");
             
         }
         
@@ -101,7 +101,7 @@ $(document).ready(function() {
                 type:"GET",
                 url: myUrl,
                 success:function(data){
-                $(".channel-info").prepend("<div class='row channel-row'><div class='col-md-2 channel'><img src="+data.stream.channel.logo+"></div><div class='col-md-8 channel-details-on'<h6><a href='"+data.stream.channel.url+"'>"+data.stream.channel.display_name+"</a></h6><p>"+data.stream.game+": "+data.stream.channel.status+"</p></div><div class='col-md-2 channel-btn'><div class='status-btn-on'></div></div></div>");
+                $(".channel-info").prepend("<div class='row channel-row'><div class='col-md-2 channel'><img src="+data.stream.channel.logo+"></div><div class='col-md-8 channel-details-on'<h6><a href='"+data.stream.channel.url+"' target='_blank'>"+data.stream.channel.display_name+"</a></h6><p>"+data.stream.game+": "+data.stream.channel.status+"</p></div><div class='col-md-2 channel-btn'><div class='status-btn-on'></div></div></div>");
                 userOn.push([data.stream.channel.url, data.stream.channel.logo,  data.stream.channel.display_name, data.stream.game, data.stream.channel.status]);
                 console.log(userOn);
             }, 
