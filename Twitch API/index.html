@@ -6,33 +6,37 @@
     
         <title>Twitch API</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Added custom & bootstrap css -->
         <link rel="stylesheet" href="main.css" type="text/css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     </head>
 
     <body>
-    
           <div class="container">
             <div class="main-wrapper">
                 <div class="row">
                     <div class="col-md-4 col-md-offset-4 main-col">
                         <img src="twitch-logo.jpg" alt="twitch-logo" id="twitch-logo" class="img-responsive">
+                        <!-- Added bootstrap button group class in the main nav -->
                         <div class="btn-group nav-btn" role="group" aria-label="Basic example">
-                          <button type="button" class="btn btn-secondary custom-btn">ALL</button>
-                          <button type="button" class="btn btn-secondary custom-btn">ONLINE</button>
-                          <button type="button" class="btn btn-secondary custom-btn">OFFLINE</button>
+                          <button id="btn-all" type="button" class="btn btn-secondary custom-btn">ALL</button>
+                          <button id="btn-on" type="button" class="btn btn-secondary custom-btn">ONLINE</button>
+                          <button id="btn-off" type="button" class="btn btn-secondary custom-btn">OFFLINE</button>
                         </div>
                         <div class="channel-info">
-                         <!-- JS divs append here -->           
+                         <!-- API called JSON divs append/prepend here -->           
                         </div>
                     </div>
                 </div>
+                <div style="margin: 20px 0 50px 0;">
+                    <p class="text-center">Created by: <a href="http://codepen.io/m-ketan/">ketan</a></p>
+                </div>
             </div>
-            <div style="margin-bottom: 50px;"></div>
-  
+            
           </div>
     </body>
 
+    <!-- Added jquery, bootstrap js and custom js -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <script src="script.js"></script>
